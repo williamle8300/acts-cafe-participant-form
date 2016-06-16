@@ -1,0 +1,77 @@
+// 
+// Demo
+// ==============================
+
+
+
+// Variables
+// ------------------------------
+
+
+@demo-bg:                        #444444;
+
+@iphone4-width:                  320px;
+@iphone4-height:                 480px;
+
+@iphone5-width:                  340px;
+@iphone5-height:                 568px;
+
+@iphone6-width:                  320px;
+@iphone6-height:                 533px;
+
+@device-width:                   @iphone6-width;
+@device-height:                  @iphone6-height;
+
+@silhouette-chrome-vertical:     50px;
+@silhouette-chrome-horizontal:   10px;
+@silhouette-width:               320px;
+@silhouette-height:              533px;
+
+
+
+#app {
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+.app-wrapper,
+.device-silhouette {
+	height: 100%;
+	width: 100%;
+}
+
+
+// desktop wrapper
+@media only screen and (min-width : 480px) {
+
+	// make it pretty!
+	
+	#app {
+		background-color: @demo-bg;
+	}
+
+	// center the app inside the viewport
+
+	.app-wrapper {
+    width: @device-width;
+    height: @device-height;
+		background: none;
+		left: 50%;
+		margin-left: -(@device-width / 2);
+		margin-top: -(@device-height / 2);
+		overflow: visible;
+		position: absolute;
+		top: 50%;
+	}
+
+	// nice for demonstrating on desktop
+
+	.device-silhouette {
+		width: @silhouette-width;
+    height: @silhouette-height;
+		background-color: fade(black, 40%);
+		border-radius: 20px;
+		margin: -@silhouette-chrome-vertical -@silhouette-chrome-horizontal;
+		padding: @silhouette-chrome-vertical @silhouette-chrome-horizontal;
+	}
+}

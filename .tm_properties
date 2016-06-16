@@ -1,0 +1,5 @@
+excludeFiles                = "{_.*,.gitignore,.tm_properties}"
+excludeInFolderSearch       = "{$excludeInFolderSearch,$extraExcludes,node_modules,bower_components,platforms,www,plugins}"
+excludeInFileChooser        = "{$exclude,$excludeInFolderSearch,node_modules,bower_components}"
+excludeDirectoriesInBrowser = "{$excludeInFolderSearch,$extraExcludes,bower_components}"
+windowTitle                 = "$TM_FILEPATH"
