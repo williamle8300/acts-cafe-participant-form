@@ -1,0 +1,47 @@
+/*
+	generics
+*/
+
+body * {
+	background: #757575;
+	font-family: "Roboto Condensed" !important;
+	font-size: 1.05em;
+  color: white !important;
+}
+
+h1, h2 {
+	margin: 0;
+}
+
+li {
+/*	font-size: 5em;*/
+}
+
+
+/*
+	jot-form
+*/
+
+.form-header-group {
+	border-bottom: 0;
+}
+
+.form-line-active {
+	background: transparent;
+}
+
+.form-line-error {
+	background: transparent;
+}
+
+.form-line-error .form-error-message {
+	background: #9c6767;
+}
+
+.form-line-error input:not(#coupon-input), .form-line-error select, .form-line-error textarea, .form-validation-error {
+	border: none;
+}
+
+.form-error-arrow {
+	background: transparent;
+}

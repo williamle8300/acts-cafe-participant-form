@@ -1,7 +1,10 @@
-const app = require('express')();
+var express = require('express')
+var app = express();
 
-app.get('/', (req, res) => {
-    res.sendFile('./index.html',  { root: __dirname });
+app.use(express.static('public'));
+
+app.get('/', function (req, res) {
+  res.sendFile('./index.html',  { root: __dirname });
 });
 
-app.listen();
+app.listen(3000);
