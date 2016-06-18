@@ -4,7 +4,7 @@
 
 body {
 	margin: 0;
-	padding: 100px;
+	padding: 0px;
 	background: #303030;
 	background-image: url('bg.jpg');
 	background-size: cover;
@@ -12,7 +12,6 @@ body {
 }
 
 body * {
-/*	background: #303030;*/
 	font-family: "Roboto Condensed" !important;
 	font-size: 1.0875em;
   color: white !important;
@@ -73,6 +72,12 @@ a:hover .brand {
 	background: transparent !important;
 }
 
+.form-wrapper {
+	height: 100%;
+	padding: 0 39px;
+	background: #2d2d2d;
+}
+
 /*
 	jot-form
 */
@@ -82,11 +87,14 @@ a:hover .brand {
 }
 
 .form-all {
-	max-width: 1150px;
+/*	max-width: 1150px;*/
 	width: 100%;
 }
 
 .form-header-group {
+	margin: 0;
+	padding: 75px;
+	background: #2b2b2b;
 	border-bottom: 0;
 }
 
@@ -122,12 +130,6 @@ a:hover .brand {
 	box-shadow: none;
 }
 
-
-/*
-	bootstrap
-*/
-
-.jumbotron, .jumbotron * {
-	background: transparent !important;
-	color: #414141 !important;
+li[data-type="control_button"] {
+	padding: 100px;
 }
