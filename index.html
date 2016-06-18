@@ -19,7 +19,7 @@
 		-->
 		<script src="https://cdn.jotfor.ms/js/vendor/jquery-1.8.0.min.js?3.3.13856" type="text/javascript"> </script> <script src="https://cdn.jotfor.ms/js/vendor/autoFill.min.js?v=3.3.13856" type="text/javascript"> </script> <script src="https://cdn.jotfor.ms/static/prototype.forms.js" type="text/javascript"> </script> <script src="https://cdn.jotfor.ms/static/jotform.forms.js?3.3.13856" type="text/javascript"> </script>
 		<script type="text/javascript">
-			JotForm.setConditions([{ "action": [{ "id": "action_1466196887375", "visibility": "Show", "isError": false, "field": "26" }], "id": "1466196908888", "index": "0", "link": "Any", "priority": "0", "terms": [{ "id": "term_1466196887375", "field": "25", "operator": "equals", "value": "Performance art (music performance, spoken word, etc)", "isError": false }], "type": "field" }]); JotForm.init(function() { setTimeout(function() { $('input_26').hint('5––10mins'); }, 20); setTimeout(function() { $('input_23').hint('youtube.com/watch?v=tTf2tNpu_Tw'); }, 20); JotForm.setCustomHint('input_17', 'Include any further details about your project'); setTimeout(function() { $('input_21').hint('ex: myname@example.com'); }, 20); JotForm.clearFieldOnHide = "disable"; setTimeout(function() { JotForm.autoFillInitialize({ "bindChange": "on", "menu": "enable", "timeout": "4", "ttl": "86400" }); }, 10); JotForm.onSubmissionError = "jumpToSubmit"; });
+			JotForm.setConditions([{ "action": [{ "id": "action_1466196887375", "visibility": "Show", "isError": false, "field": "26" }], "id": "1466196908888", "index": "0", "link": "Any", "priority": "0", "terms": [{ "id": "term_1466196887375", "field": "25", "operator": "equals", "value": "Performance art (music performance, spoken word, etc)", "isError": false }], "type": "field" }]); JotForm.init(function() { setTimeout(function() { $('input_26').hint('5–10mins'); }, 20); setTimeout(function() { $('input_23').hint('youtube.com/watch?v=tTf2tNpu_Tw'); }, 20); JotForm.setCustomHint('input_17', 'Include any further details about your project'); setTimeout(function() { $('input_21').hint('ex: jdoe@gmail.com'); }, 20); JotForm.clearFieldOnHide = "disable"; setTimeout(function() { JotForm.autoFillInitialize({ "bindChange": "on", "menu": "enable", "timeout": "4", "ttl": "86400" }); }, 10); JotForm.onSubmissionError = "jumpToSubmit"; });
 		</script>
 		<link href="https://cdn.jotfor.ms/static/formCss.css?3.3.13856" rel="stylesheet" type="text/css">
 		<link type="text/css" rel="stylesheet" href="https://cdn.jotfor.ms/css/styles/nova.css?3.3.13856">
@@ -75,10 +75,11 @@
 								<h1 id="header_18" class="form-header">
 									Artwork Submissions
 								</h1>
-								<h3 class="brand">
-									redemption point
-									<img class="logo" src="logo.png"/>
-								</h3>
+								<a href="http://redemptionpoint.us">
+									<h3 class="brand">
+										redemption point <img class="logo" src="logo.png"/>
+									</h3>
+								</a>
 								<h2 class="subtitle">
 									FOR ACTS CAFÉ
 								</h2>
@@ -126,7 +127,7 @@
 						</div>
 					</li>
 					<li class="form-line" data-type="control_fileupload" id="id_27">
-						<label class="form-label form-label-top form-label-auto" id="label_27" for="input_27">(Optional) Upload your artwork presentation speech</label>
+						<label class="form-label form-label-top form-label-auto" id="label_27" for="input_27">(Optional) Upload presentation speech</label>
 						<div id="cid_27" class="form-input-wide jf-required">
 							<input class="form-upload" type="file" id="input_27" name="q27_optionalUpload27" file-accept="pdf, doc, docx, xls, xlsx, csv, txt, rtf, html, zip, mp3, wma, mpg, flv, avi, jpg, jpeg, png, gif" file-maxsize="1024" file-minsize="0" file-limit="0">
 						</div>
@@ -134,7 +135,7 @@
 					<li class="form-line form-line-column form-col-1 jf-required" data-type="control_fullname" id="id_15">
 						<label class="form-label form-label-top" id="label_15" for="input_15">Name <span class="form-required">*</span></label>
 						<div id="cid_15" class="form-input-wide jf-required">
-							<span class="form-sub-label-container" style="vertical-align: top"><input class="form-textbox validate[required]" type="text" size="10" name="q15_name[first]" id="first_15"> <label class="form-sub-label" for="first_15" id="sublabel_first" style="min-height: 13px;">First Name</label></span> <span class="form-sub-label-container" style="vertical-align: top"><input class="form-textbox validate[required]" type="text" size="15" name="q15_name[last]" id="last_15"> <label class="form-sub-label" for="last_15" id="sublabel_last" style="min-height: 13px;">Last Name</label></span>
+							<span class="form-sub-label-container" style="vertical-align: top"><input class="form-textbox validate[required]" type="text" size="10" name="q15_name[first]" id="first_15" placeholder="First Name"> </span> <span class="form-sub-label-container" style="vertical-align: top"><input  placeholder="Last Name" class="form-textbox validate[required]" type="text" size="15" name="q15_name[last]" id="last_15"> </span>
 						</div>
 					</li>
 					<li class="form-line form-line-column form-col-2 jf-required" data-type="control_email" id="id_21">
