@@ -6,19 +6,23 @@ body {
 	margin: 0;
 	padding: 0px;
 	background: #303030;
-	background-image: url('bg.jpg');
+	background-image: url('http://i.imgur.com/Tc7xFGQ.jpg');
 	background-size: cover;
 	opacity: 0.9;
 }
 
 body * {
 	font-family: "Roboto Condensed" !important;
-	font-size: 1.0875em;
+	font-size: 1.035em;
   color: white !important;
 }
 
 h1, h2, h3, h4 {
 	margin: 0;
+}
+
+h1 {
+	font-size: 2.143em !important;
 }
 
 button {
@@ -74,28 +78,55 @@ a:hover .brand {
 
 .form-wrapper {
 	height: 100%;
-	padding: 0 39px;
+	padding: 39px;
 	background: #2d2d2d;
+}
+
+.form-footer {
+	position: relative;
+	top: -1px;
+	color: white;
+}
+
+.form-footer .address {
+	float: right;
+	position: relative;
+	top: -1em;
+	text-align: right;
+  font-size: 1.75em;
+  line-height: 4px;
+}
+
+.form-footer .address a {
+	text-decoration: none;
+	font-family: Helvetica;
+}
+
+.form-footer .address a:hover {
+	text-decoration: underline;
+}
+
+.form-footer .address a img {
+	width: 18px;
 }
 
 /*
 	jot-form
 */
 
-.jotform-form {
-	opacity: 0.97;
-}
-
 .form-all {
 /*	max-width: 1150px;*/
 	width: 100%;
+	border: none;
 }
 
 .form-header-group {
+	position: relative;
+	top: 1px;
 	margin: 0;
 	padding: 75px;
-	background: #2b2b2b;
-	border-bottom: 0;
+	background: #424242;
+	border: none;
 }
 
 .form-line-active {
@@ -130,6 +161,15 @@ a:hover .brand {
 	box-shadow: none;
 }
 
+.form-buttons-wrapper {
+	text-align: left !important;
+}
+
 li[data-type="control_button"] {
-	padding: 100px;
+	padding-top: 50px;
+}
+
+.form-submit-button {
+	font: bold 1.25em helvetica !important;
+  color: #666d74 !important;
 }
